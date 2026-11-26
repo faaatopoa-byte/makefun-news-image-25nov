@@ -1,35 +1,33 @@
 #!/usr/bin/env python3
-"""Entry program for make.fun's news-image-20261125.
+"""Deliver the committed front page for make.fun news-image-20261125.
 
-The repository holds entry.png, the front page drawn by render.py from the
-sources listed in SOURCES.md. This program copies that file to
-/output/entry.png unchanged, so the grader's two runs produce identical
-bytes and nothing depends on network access or local fonts.
+The image itself lives in this repository as entry.png (drawn from the
+sources named in SOURCES.md). This program does one thing: it copies that
+file to /output/entry.png byte for byte, so the two grading runs produce
+identical output. It needs no network, no fonts and no image library.
 """
+
 import shutil
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "entry.png"
+HERE = Path(__file__).resolve().parent
+IMAGE = HERE / "entry.png"
 
 
-def fallback_target() -> Path:
-    """Where the image goes when /output cannot be created or written."""
-    target = Path.cwd() / "output" / "entry.png"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    return target
-
-
-def write_entry() -> Path:
-    out_dir = Path("/output")
+def pick_target() -> Path:
+    """Prefer /output/entry.png; fall back to ./output/entry.png."""
+    root = Path("/output")
     try:
-        out_dir.mkdir(parents=True, exist_ok=True)
-        target = out_dir / "entry.png"
+        root.mkdir(parents=True, exist_ok=True)
     except OSError:
-        target = fallback_target()
-    shutil.copyfile(SOURCE, target)
-    return target
+        root = Path.cwd() / "output"
+        root.mkdir(parents=True, exist_ok=True)
+    return root / "entry.png"
+
+
+def main() -> None:
+    shutil.copyfile(IMAGE, pick_target())
 
 
 if __name__ == "__main__":
-    write_entry()
+    main()

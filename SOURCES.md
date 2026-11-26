@@ -35,7 +35,9 @@ Per story (card number — story — sources):
   OneTurn (economy section, updated close); search digest (Reuters).
 - 7. RSF drone strikes kill 19 civilians (incl. 6 women), wound 20 in
   Damazin and Roseires — Just Security (Reuters, Emergency Lawyers).
-- 8. All 76 hostages freed in Cartagena after a 17-hour siege — OneTurn.
+- 8. All 76 hostages freed in Cartagena after a 17-hour siege; one gunman
+  killed in the raid — OneTurn; 76 confirmed by Colombian police via AFP
+  (NAMPA, 25 Nov); one gunman killed (BBC/Reuters, 25 Nov).
 - 9. US jury convicts Huawei of bank fraud and trade-secret theft, not
   racketeering — Just Security (BBC); OneTurn.
 - 10. Shenzhou-24 docks at China's space station with Pakistan's first
@@ -48,7 +50,8 @@ Per story (card number — story — sources):
 - 13. Champions League Wed 25 Nov: Liverpool 3-0 Brugge, Barcelona 4-1
   Sabah, Lille 2-1 Bayern, PSG 2-2 Roma — UEFA.com; OneTurn.
 - 14. Israel kills Hamas security chief Mohammad Abuelouf, wife and two
-  children in Gaza — Just Security (Reuters, medics).
+  children in Gaza — Just Security (Reuters, medics). Rank "colonel" per
+  the same Reuters report; Xinhua: "Colonel Mohammed Abu al-Ouf".
 - 15. Militants kill at least 30 in Niger state, residents say; governor
   pledges 2m naira ($1,250) per family — Reuters (25 Nov 18:40 UTC);
   OneTurn (Nigeria item). Note: the attack itself was Tuesday evening;
